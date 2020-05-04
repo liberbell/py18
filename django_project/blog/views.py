@@ -3,4 +3,14 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Welcom to bloghome.")
+    return HttpResponse('''
+    <!doctype html>
+    <html>
+    <head>
+     <title></title>
+     </head>
+     <body>
+     Welcome to Django!
+     </body>
+     </html>
+     ''')
