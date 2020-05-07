@@ -5,7 +5,22 @@ Business Blog
 {% endblock title %}
 
 {% block content %}
-<!DOCTYPE html>
+
+<section>
+ <p></p>
+</section>
+
+<section>
+<form action="" method="post">
+ <p>
+  please submit your Blog :
+  <input type="text" name="url">
+</p>
+<p>
+ <button type="submit">Submit</botton>
+</p>
+
+{% comment %} <!DOCTYPE html>
 <html>
     <head lang="en">
         <title>Business Blog</title>
@@ -22,7 +37,8 @@ Business Blog
             </p>
         </form>
     </section>
-</html>
+</html> {% endcomment %}
 {% endblock content %}
+
 {% block footer %}
 {% endblock footer %}
