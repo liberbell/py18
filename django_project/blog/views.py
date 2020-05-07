@@ -21,4 +21,4 @@ def business(request):
     context = {
         'post' : posts
     }
-    return render(request, 'blog/business.html')
+    return render(request, 'blog/business.html', context)
