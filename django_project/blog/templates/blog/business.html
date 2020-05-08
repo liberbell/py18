@@ -14,6 +14,13 @@ Business Blog
         <div class="list-group">
          <article>
           <div class="media-body">
+           <div class="list-group">
+            <a href="#">{{ post.author }}</a>
+            <small>{{ post.date_posted }}</small>
+           </div>
+           <h2><a href="#">{{ post.title }}</a></h2>
+           <p>{{ post.content }}</p>
+         </article>
     {% endfor %}
 </section>
 
