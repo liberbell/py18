@@ -10,11 +10,12 @@ posts = [
      'title': 'Blog post 1',
      'content': 'First post content',
      'date_posted': 'May 7 2020'
-     },
-     {'author': 'Test',
-      'title': 'Blog post 2',
-      'content': 'Second post content',
-      'date_posted': 'May 8 2020'}
+    },
+    {'author': 'Test',
+     'title': 'Blog post 2',
+     'content': 'Second post content',
+     'date_posted': 'May 8 2020'
+    }
 ]
 
 def business(request):
