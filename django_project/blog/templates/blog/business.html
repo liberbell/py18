@@ -6,7 +6,7 @@ Business Blog
 
 {% block content %}
 
-<section>
+<section class="container">
     {% for post in posts %}
         {% comment %} <h1>{{ post.title }}</h1>
         <p>By {{ post.author }} on {{ post.date_posted }}</p>
