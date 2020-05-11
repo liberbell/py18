@@ -1,4 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block contents %}
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
 {% endblock contents %}
