@@ -9,5 +9,8 @@ def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.Post)
 
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+
     else:
         form = UserCreationForm()
