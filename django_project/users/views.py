@@ -7,7 +7,7 @@ def register(request):
     # form = UserCreationForm()
     # return render(request, 'users/register.html', {'form': form})
     if request.method == 'POST':
-        form = UserCreationForm(request.Post)
+        form = UserCreationForm(request, Post)
 
         if form.is_valid():
             username = form.cleaned_data.get('username')
