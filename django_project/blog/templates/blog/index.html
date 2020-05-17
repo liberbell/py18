@@ -12,23 +12,28 @@ Welcom
     <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
   </div>
 </div>
-
-<div class="container">
-  <!-- Example row of columns -->
-  <div class="row">
-    <div class="col-md-4">
-      <h2>Business</h2>
-      <p><a class="btn btn-default" href="{% url 'business' %}" role="button">View details &raquo;</a></p>
+{% if user.is_authenticated %}
+    <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Business</h2>
+        <p><a class="btn btn-default" href="{% url 'business' %}" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Sports</h2>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Entertainment</h2>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </div>
     </div>
-    <div class="col-md-4">
-      <h2>Sports</h2>
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+{% else %}
+    <div class="container">
+    <h4>Create an account to view and post awesome blogs</h4>
     </div>
-    <div class="col-md-4">
-      <h2>Entertainment</h2>
-      <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-    </div>
-  </div>
+{% endif %}
 
   <hr>
 
