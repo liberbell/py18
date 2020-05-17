@@ -36,10 +36,11 @@
                 <form class="navbar-form navbar-right" role="form">
                     <a class="btn btn-success" href={% url 'logout' %} role="button">Sign out</a>
                 </form>
-          <form class="navbar-form navbar-right" role="form">
-            <a class="btn btn-success" href={% url 'login' %} role="button">Sign in</a>
-            <a class="btn btn-success" href={% url 'register' %} role="button">Register</a>
-          </form>
+            {% else %}
+                <form class="navbar-form navbar-right" role="form">
+                    <a class="btn btn-success" href={% url 'login' %} role="button">Sign in</a>
+                    <a class="btn btn-success" href={% url 'register' %} role="button">Register</a>
+                </form>
             {% endif %}
         </div><!--/.navbar-collapse -->
       </div>
